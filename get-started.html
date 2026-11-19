@@ -1,0 +1,131 @@
+---
+title: "Free 30-Day Learning Plan & Tutor Match | ABC.Academy"
+desc: "Tell us about your child and get a free 30-day learning plan for reading or math — plus optional matching with vetted tutors and programs in your budget."
+slug: "get-started"
+crumb: "Free 30-Day Learning Plan & Tutor Match"
+js: ["leads.js"]
+sticky: false
+---
+<section class="page-head"><div class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="{{ page.root }}/index.html">Home</a> / Parents / Free learning plan</nav>
+  <h1>Get a free 30-day learning plan for your child</h1>
+  <p class="lede">Answer five quick steps. You'll see your first week instantly, receive the full plan by email, and — only if you want it — get matched with vetted tutors, classes or programs that fit your budget.</p>
+</div></section>
+
+<section class="section"><div class="wrap split">
+  <form class="form-card" id="lead-form" data-form="Learning plan & tutor match lead" data-manual style="padding:clamp(1.3rem,3vw,2.2rem)">
+    <div class="stepper" aria-hidden="true"></div>
+    <p class="step-count"></p>
+
+    <div class="step">
+      <h2 style="font-size:1.6rem">Who are you?</h2>
+      <div class="options">
+        <label class="opt"><input type="radio" name="role" value="Parent or guardian" required><span><b>👪</b>Parent or guardian</span></label>
+        <label class="opt"><input type="radio" name="role" value="Homeschool parent"><span><b>🏡</b>Homeschool parent</span></label>
+        <label class="opt"><input type="radio" name="role" value="Teacher"><span><b>🍎</b>Teacher</span></label>
+        <label class="opt"><input type="radio" name="role" value="School or daycare leader"><span><b>🏫</b>School or daycare leader</span></label>
+      </div>
+    </div>
+
+    <div class="step">
+      <h2 style="font-size:1.6rem">How old is your child?</h2>
+      <div class="options">
+        <label class="opt"><input type="radio" name="child_age" value="Age 2-3" required><span><b>🧸</b>Age 2–3</span></label>
+        <label class="opt"><input type="radio" name="child_age" value="Age 3"><span><b>🖍️</b>Age 3</span></label>
+        <label class="opt"><input type="radio" name="child_age" value="Age 4 (Pre-K)"><span><b>🎒</b>Age 4 (Pre-K)</span></label>
+        <label class="opt"><input type="radio" name="child_age" value="Age 5 (Kindergarten)"><span><b>✏️</b>Age 5 (Kindergarten)</span></label>
+        <label class="opt"><input type="radio" name="child_age" value="Age 6 (Grade 1)"><span><b>📘</b>Age 6 (Grade 1)</span></label>
+        <label class="opt"><input type="radio" name="child_age" value="Age 7-8 (Grade 2+)"><span><b>📚</b>Age 7–8 (Grade 2+)</span></label>
+      </div>
+      <div class="field"><label for="kids">How many children is this for?</label><select id="kids" name="children_count"><option>1</option><option>2</option><option>3+</option><option>A whole class</option></select></div>
+    </div>
+
+    <div class="step">
+      <h2 style="font-size:1.6rem">What should the plan focus on?</h2>
+      <p class="muted">Choose all that apply.</p>
+      <div class="options" data-need-one>
+        <label class="opt"><input type="checkbox" name="focus" value="Letters & sounds"><span><b>🔤</b>Letters & sounds</span></label>
+        <label class="opt"><input type="checkbox" name="focus" value="Phonics & reading"><span><b>📖</b>Phonics & reading</span></label>
+        <label class="opt"><input type="checkbox" name="focus" value="Sight words"><span><b>👀</b>Sight words</span></label>
+        <label class="opt"><input type="checkbox" name="focus" value="Numbers & math"><span><b>🔢</b>Numbers & math</span></label>
+        <label class="opt"><input type="checkbox" name="focus" value="Handwriting"><span><b>✍️</b>Handwriting</span></label>
+        <label class="opt"><input type="checkbox" name="focus" value="School readiness"><span><b>🎒</b>School readiness</span></label>
+      </div>
+      <div class="field"><label for="challenge">Anything we should know? <span class="hint">(optional)</span></label><textarea id="challenge" name="challenge" placeholder="For example: knows most letters but guesses words; gets frustrated with writing; starting kindergarten in September."></textarea></div>
+    </div>
+
+    <div class="step">
+      <h2 style="font-size:1.6rem">What kind of help would you like?</h2>
+      <div class="options">
+        <label class="opt"><input type="radio" name="support" value="Just the free plan" required><span><b>📋</b>Just the free plan</span></label>
+        <label class="opt"><input type="radio" name="support" value="Online 1:1 tutor"><span><b>💻</b>Online 1:1 tutor</span></label>
+        <label class="opt"><input type="radio" name="support" value="In-person tutor"><span><b>🧑‍🏫</b>In-person tutor</span></label>
+        <label class="opt"><input type="radio" name="support" value="Small-group class"><span><b>👥</b>Small-group class</span></label>
+        <label class="opt"><input type="radio" name="support" value="Learning app suggestions"><span><b>📱</b>Learning app suggestions</span></label>
+        <label class="opt"><input type="radio" name="support" value="School or center program"><span><b>🏫</b>School or center program</span></label>
+      </div>
+      <div class="row2">
+        <div class="field"><label for="budget">Monthly budget</label><select id="budget" name="budget" required><option value="">Choose</option><option>Free resources only</option><option>Under $50/month</option><option>$50-$150/month</option><option>$150-$300/month</option><option>$300+/month</option></select></div>
+        <div class="field"><label for="timeline">When would you like to start?</label><select id="timeline" name="timeline" required><option value="">Choose</option><option>This week</option><option>This month</option><option>Just exploring</option></select></div>
+      </div>
+    </div>
+
+    <div class="step">
+      <h2 style="font-size:1.6rem">Where should we send the plan?</h2>
+      <div class="row2">
+        <div class="field"><label for="pname">Your first name</label><input id="pname" type="text" name="parent_name" required autocomplete="given-name"></div>
+        <div class="field"><label for="pemail">Email</label><input id="pemail" type="email" name="email" required autocomplete="email"></div>
+      </div>
+      <div class="row2">
+        <div class="field"><label for="pphone">Phone <span class="hint">(optional, for tutor matching)</span></label><input id="pphone" type="tel" name="phone" autocomplete="tel"></div>
+        <div class="field"><label for="pcountry">Country</label><select id="pcountry" name="country" required><option value="">Choose</option><option>United States</option><option>Canada</option><option>United Kingdom</option><option>Australia</option><option>India</option><option>New Zealand</option><option>Ireland</option><option>Other</option></select></div>
+      </div>
+      <div class="row2">
+        <div class="field"><label for="pzip">ZIP / postal code <span class="hint">(optional, for in-person options)</span></label><input id="pzip" type="text" name="postal_code" autocomplete="postal-code"></div>
+        <div class="field"><label for="pcontact">Best way to reach you</label><select id="pcontact" name="contact_pref"><option>Email</option><option>Phone call</option><option>Text message</option></select></div>
+      </div>
+      <label class="check"><input type="checkbox" name="consent" value="Agreed to be contacted" required> I'm 18 or older and agree that ABC.Academy may email me the plan and contact me about my request.</label>
+      <label class="check"><input type="checkbox" name="partner_consent" value="Yes"> Share my request with up to 3 vetted tutoring or learning partners so they can send me options. (Optional)</label>
+    </div>
+
+    <input type="hidden" name="source"><input type="hidden" name="readiness_score">
+    <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off">
+    <div class="step-nav"><button type="button" class="btn btn-ghost" data-prev>Back</button><button type="button" class="btn btn-primary" data-next>Continue</button><button type="submit" class="btn btn-primary" hidden>Send my free plan</button></div>
+    <p class="form-note">We never ask for your child's name or photo. Your details are used only for your request — see our <a href="{{ page.root }}/privacy.html">privacy policy</a>.</p>
+    <div class="form-done"><div class="block c-leaf" style="cursor:default">✓</div><h2>Your plan is ready</h2><div id="plan-out"></div><div class="btn-row" style="justify-content:center;margin-top:1rem"><a class="btn btn-primary" href="{{ page.root }}/alphabet.html">Start day 1 now</a><a class="btn btn-ghost" href="{{ page.root }}/worksheets.html">Print worksheets</a></div></div>
+  </form>
+
+  <aside>
+    <div class="panel ruled-top">
+      <h2 style="font-size:1.4rem">What you get</h2>
+      <ul class="trust-list">
+        <li>A day-by-day 30-day plan using free ABC.Academy tools, matched to age and focus</li>
+        <li>Your first 7 days on screen the moment you finish</li>
+        <li>Printable worksheet schedule for each week</li>
+        <li>Optional: tutor, class or program options in your budget</li>
+      </ul>
+    </div>
+    <div class="panel" style="margin-top:1rem">
+      <h3 style="font-size:1.15rem">Our promises</h3>
+      <ul class="trust-list">
+        <li>Free, with no credit card</li>
+        <li>No child's personal information, ever</li>
+        <li>Partners only contact you if you tick the box</li>
+        <li>Unsubscribe from any email in one click</li>
+      </ul>
+    </div>
+    <div class="panel" style="margin-top:1rem">
+      <h3 style="font-size:1.15rem">Are you a tutor or program?</h3>
+      <p class="small muted">Join our partner network to receive matched family requests in your area or online.</p>
+      <a class="btn btn-ink btn-sm" href="{{ page.root }}/partners.html#tutors">Become a learning partner</a>
+    </div>
+  </aside>
+</div></section>
+
+<section class="section alt"><div class="wrap narrow faq">
+  <h2>Questions about the plan</h2>
+  <details><summary>Is the plan really free?</summary><p>Yes. The plan uses ABC.Academy's free tools and printables. Tutors and programs are optional and you'll always see their prices before committing to anything.</p></details>
+  <details><summary>How are tutors and programs chosen?</summary><p>We look for qualified early-literacy and early-math educators and programs with clear pricing and good family feedback. You decide whether to contact any of them.</p></details>
+  <details><summary>Will my information be sold?</summary><p>No. We only share your request with partners if you tick the optional sharing box, and only to answer your request.</p></details>
+  <details><summary>My child is struggling. Is this a diagnosis?</summary><p>No. The plan is an educational starting point. If you're worried about speech, hearing, vision or development, talk to your pediatrician or your child's school.</p></details>
+</div></section>

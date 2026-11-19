@@ -1,0 +1,78 @@
+---
+title: "Monthly Kids Creativity Contest — Win Prizes | ABC.Academy"
+desc: "A new theme every month for kids ages 2–8. Parents submit a drawing, story or project; winners receive prizes. Free to enter."
+slug: "contests"
+crumb: "Monthly Kids Creativity Contest — Win Prizes"
+---
+<section class="page-head"><div class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="{{ page.root }}/index.html">Home</a> / Community / Monthly contest</nav>
+  <h1>The monthly creativity contest</h1>
+  <p class="lede">A new theme every month for children ages 2–8. A parent or teacher submits the entry, our judges pick winners in three age groups, and winners receive prizes. Free to enter.</p>
+</div></section>
+
+<section class="section"><div class="wrap">
+  <div class="theme-card" id="contest-theme"><p class="muted">Loading this month's theme…</p></div>
+  <div class="grid g2" style="margin-top:1.5rem;align-items:center">
+    <div><h3 style="margin-bottom:.6rem">Entries close in</h3><div class="countdown" id="countdown"></div></div>
+    <div class="panel"><h3 style="font-size:1.1rem;margin-bottom:.3rem">This month's prizes</h3><p class="muted" style="margin:0" id="contest-prize"></p></div>
+  </div>
+</div></section>
+
+<section class="section alt"><div class="wrap grid g2" style="gap:3rem;align-items:start">
+  <div>
+    <h2>How to enter</h2>
+    <ol class="timeline">
+      <li><div><b>Create</b><p class="muted" style="margin:.2rem 0 0">Your child makes a drawing, story, craft or short video on this month's theme. Grown-ups may write down a story the child tells.</p></div></li>
+      <li><div><b>Upload</b><p class="muted" style="margin:.2rem 0 0">Save a photo or video to Google Drive, Dropbox, OneDrive or iCloud and copy a share link.</p></div></li>
+      <li><div><b>Submit</b><p class="muted" style="margin:.2rem 0 0">Fill in the form with the link. Use your child's first name or initials only.</p></div></li>
+      <li><div><b>Judging</b><p class="muted" style="margin:.2rem 0 0">Entries are judged in three age groups: 2–4, 5–6 and 7–8.</p></div></li>
+      <li><div><b>Winners</b><p class="muted" style="margin:.2rem 0 0">Winners are contacted by email within 14 days of the close and listed here by first name and age with permission.</p></div></li>
+    </ol>
+    <h3 style="margin-top:2rem">Coming up next</h3>
+    <ul id="contest-next"></ul>
+    <h3 style="margin-top:2rem">Judging criteria</h3>
+    <table class="prose" style="font-size:.95rem"><tr><th>Creativity and imagination</th><td>40%</td></tr><tr><th>Connection to the theme</th><td>30%</td></tr><tr><th>Effort for age</th><td>20%</td></tr><tr><th>The story behind it</th><td>10%</td></tr></table>
+  </div>
+  <form class="form-card" id="enter" data-form="Contest entry">
+    <h2 style="font-size:1.6rem">Submit an entry</h2>
+    <input type="hidden" name="contest_theme">
+    <div class="row2">
+      <div class="field"><label for="c-name">Parent or teacher name</label><input id="c-name" name="name" type="text" required autocomplete="name"></div>
+      <div class="field"><label for="c-email">Email</label><input id="c-email" name="email" type="email" required autocomplete="email"></div>
+    </div>
+    <div class="row2">
+      <div class="field"><label for="c-child">Child's first name or initials</label><input id="c-child" name="child_first_name" type="text" maxlength="20" required></div>
+      <div class="field"><label for="c-age">Child's age group</label><select id="c-age" name="age_group" required><option value="">Choose</option><option>2-4</option><option>5-6</option><option>7-8</option></select></div>
+    </div>
+    <div class="field"><label for="c-type">Type of entry</label><select id="c-type" name="entry_type" required><option value="">Choose</option><option>Drawing or painting</option><option>Story (told or written)</option><option>Craft or build</option><option>Short video (under 2 minutes)</option></select></div>
+    <div class="field"><label for="c-link">Link to the entry</label><input id="c-link" name="entry_link" type="url" required placeholder="https://drive.google.com/…"><span class="hint">Make sure the link is set to "anyone with the link can view".</span></div>
+    <div class="field"><label for="c-desc">Tell us about it</label><textarea id="c-desc" name="description" maxlength="600" placeholder="What did your child make, and what do they want the judges to know?"></textarea></div>
+    <div class="field"><label for="c-country">Country</label><input id="c-country" name="country" type="text" required></div>
+    <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off">
+    <label class="check"><input type="checkbox" name="guardian" value="Confirmed" required> I'm the child's parent, legal guardian or teacher (18+) and the entry is the child's own work.</label>
+    <label class="check"><input type="checkbox" name="rules" value="Accepted" required> I accept the official rules below and allow ABC.Academy to show the entry with the child's first name and age if it wins.</label>
+    <button class="btn btn-primary" type="submit" style="width:100%">Submit entry</button>
+    <div class="form-done"><div class="block c-sun" style="cursor:default">🏆</div><h3>Entry received!</h3><p class="muted">Good luck! Winners are emailed within 14 days after entries close.</p></div>
+  </form>
+</div></section>
+
+<section class="section"><div class="wrap grid g2" style="gap:3rem;align-items:start">
+  <div class="prose">
+    <h2>Official rules</h2>
+    <ol class="small">
+      <li><b>No purchase necessary.</b> Entry is free. A purchase or donation does not improve the chance of winning.</li>
+      <li><b>Eligibility.</b> Open to children ages 2–8. Entries must be submitted by a parent, legal guardian or teacher aged 18 or older. Void where prohibited by law. Employees of ABC.Academy and their immediate families are not eligible.</li>
+      <li><b>Entry period.</b> Each contest runs from the first day to the last day of the calendar month, ending 11:59 p.m. Eastern Time. One entry per child per month.</li>
+      <li><b>Judging.</b> Winners are chosen by ABC.Academy judges using the published criteria. This is a contest of skill, not a random drawing. Judges' decisions are final.</li>
+      <li><b>Prizes.</b> One winner per age group unless stated otherwise. Prizes are not transferable and have no cash alternative except where required by law. ABC.Academy may substitute a prize of equal or greater value. Winners are responsible for any taxes.</li>
+      <li><b>Notification.</b> Winners are emailed within 14 days of the close and must reply within 14 days or an alternate may be chosen.</li>
+      <li><b>Rights.</b> Entrants keep ownership of their work. By entering you grant ABC.Academy a free, non-exclusive license to display winning entries with the child's first name and age on this website and our social channels.</li>
+      <li><b>Privacy.</b> We never publish a child's last name, school, location or face without separate written permission. See the <a href="{{ page.root }}/privacy.html">privacy policy</a>.</li>
+      <li><b>Conduct.</b> Entries must be original and family-friendly. We may disqualify entries that copy others' work, include personal information or break these rules.</li>
+    </ol>
+  </div>
+  <div>
+    <div class="panel ruled-top"><h2 style="font-size:1.5rem">Sponsor a monthly contest</h2><p class="muted">Put your brand in front of engaged families: name the prize pack, appear on this page and in our winner announcements.</p><a class="btn btn-ink" href="{{ page.root }}/partners.html#sponsor">See sponsorship options</a></div>
+    <div class="panel" style="margin-top:1rem"><h2 style="font-size:1.3rem">Help fund the prizes</h2><p class="muted">Every donation helps us run contests with bigger prizes and more winners.</p><a class="btn btn-primary" href="{{ page.root }}/support.html">Donate to the prize fund</a></div>
+  </div>
+</div></section>
