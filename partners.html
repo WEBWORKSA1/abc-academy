@@ -1,0 +1,56 @@
+---
+title: "Advertise, Sponsor & Partner with ABC.Academy"
+desc: "Reach parents and teachers of children ages 2–8 through sponsorships, contest partnerships, featured placements and school programs."
+slug: "partners"
+crumb: "Advertise, Sponsor & Partner with ABC.Academy"
+---
+<section class="page-head"><div class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="{{ page.root }}/index.html">Home</a> / Community / Advertise & partner</nav>
+  <h1>Reach the families and teachers of young learners</h1>
+  <p class="lede">ABC.Academy is where parents and teachers of children ages 2–8 come to teach reading, writing and math. Partner with us through sponsorships, contest prizes, featured placements, tutoring referrals and school programs.</p>
+</div></section>
+
+<section class="section"><div class="wrap">
+  <div class="section-head"><h2>Ways to partner</h2><p class="muted">Every package is reviewed for fit with our audience. We only feature brands that are appropriate for families with young children.</p></div>
+  <div class="grid g4">
+    <div class="pkg" id="sponsor"><h3>Contest sponsor</h3><p class="price">Monthly</p><ul><li>Your brand on the contest page and entry confirmation</li><li>Name the prize pack</li><li>Mention in winner announcements</li></ul><a class="btn btn-ghost btn-sm" href="#inquire" data-interest="Contest sponsorship">Ask about this</a></div>
+    <div class="pkg feature"><h3>Featured learning partner</h3><p class="price">Quarterly</p><ul><li>Featured placement on a tool page (e.g. phonics or math)</li><li>"Recommended by ABC.Academy" listing in learning plans</li><li>Performance report each month</li></ul><a class="btn btn-primary btn-sm" href="#inquire" data-interest="Featured learning partner">Ask about this</a></div>
+    <div class="pkg" id="tutors"><h3>Tutoring & program partner</h3><p class="price">Per qualified request</p><ul><li>Receive matched requests from families who opted in</li><li>Filter by age, subject, budget and location</li><li>Pay only for requests that fit your criteria</li></ul><a class="btn btn-ghost btn-sm" href="#inquire" data-interest="Tutoring/program partner (lead referrals)">Ask about this</a></div>
+    <div class="pkg"><h3>Schools & districts</h3><p class="price">Custom</p><ul><li>Branded printable packs for your classrooms</li><li>Family-engagement learning plans</li><li>Teacher training sessions</li></ul><a class="btn btn-ghost btn-sm" href="#inquire" data-interest="School or district program">Ask about this</a></div>
+  </div>
+</div></section>
+
+<section class="section alt"><div class="wrap grid g2" style="gap:3rem;align-items:start">
+  <div class="prose">
+    <h2>Who visits ABC.Academy</h2>
+    <ul>
+      <li><b>Parents of children ages 2–8</b> looking for alphabet, phonics, sight word and math practice</li>
+      <li><b>Pre-K to Grade 2 teachers</b> printing worksheets and using tools on classroom screens</li>
+      <li><b>Homeschooling families</b> planning their week</li>
+      <li><b>Families seeking extra help</b> through our learning-plan and tutor-match requests</li>
+    </ul>
+    <h2>Our standards</h2>
+    <p>We don't accept advertising for products that are unsafe or unsuitable for families with young children, and we never sell children's personal information. Sponsored placements are always labeled. Display advertising on the site is served by Google AdSense under Google's policies.</p>
+    <p>Interested in the website or the domain name itself? Use the contact link at the very top of any page.</p>
+  </div>
+  <form class="form-card" id="inquire" data-form="Partnership / advertising inquiry">
+    <h2 style="font-size:1.6rem">Start a conversation</h2>
+    <div class="row2">
+      <div class="field"><label for="p-name">Your name</label><input id="p-name" name="name" type="text" required autocomplete="name"></div>
+      <div class="field"><label for="p-email">Work email</label><input id="p-email" name="email" type="email" required autocomplete="email"></div>
+    </div>
+    <div class="row2">
+      <div class="field"><label for="p-org">Company or organization</label><input id="p-org" name="organization" type="text" required autocomplete="organization"></div>
+      <div class="field"><label for="p-site">Website</label><input id="p-site" name="website" type="url" placeholder="https://"></div>
+    </div>
+    <div class="row2">
+      <div class="field"><label for="p-int">Interested in</label><select id="p-int" name="interest" required><option value="">Choose</option><option>Contest sponsorship</option><option>Featured learning partner</option><option>Tutoring/program partner (lead referrals)</option><option>School or district program</option><option>Display advertising</option><option>Content partnership</option><option>Acquiring the website or domain</option><option>Something else</option></select></div>
+      <div class="field"><label for="p-bud">Budget range</label><select id="p-bud" name="budget"><option>Not sure yet</option><option>Under $500</option><option>$500-$2,000</option><option>$2,000-$10,000</option><option>$10,000+</option></select></div>
+    </div>
+    <div class="field"><label for="p-msg">Tell us about your goals</label><textarea id="p-msg" name="message" required></textarea></div>
+    <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off">
+    <button class="btn btn-primary" type="submit" style="width:100%">Send inquiry</button>
+    <div class="form-done"><div class="block c-grape" style="cursor:default">🤝</div><h3>Thanks — we'll be in touch</h3><p class="muted">Expect a reply within two business days.</p></div>
+  </form>
+</div></section>
+<script>document.addEventListener("click",function(e){var a=e.target.closest("[data-interest]");if(a){var s=document.getElementById("p-int");s.value=a.getAttribute("data-interest");}});</script>
