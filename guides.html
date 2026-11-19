@@ -1,0 +1,29 @@
+---
+title: "Parent & Teacher Guides to Early Reading and Math | ABC.Academy"
+desc: "Practical, research-informed guides on teaching the alphabet, phonics, sight words, kindergarten readiness, early math and choosing a tutor."
+slug: "guides"
+crumb: "Parent & Teacher Guides to Early Reading and Math"
+exit: true
+---
+<section class="page-head"><div class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="{{ page.root }}/index.html">Home</a> / Guides</nav>
+  <h1>Guides for parents and teachers</h1>
+  <p class="lede">Clear, practical advice on teaching the alphabet, phonics, sight words, early math and school readiness — with the tools to practice each skill right here.</p>
+</div></section>
+
+<section class="section"><div class="wrap">
+  <div class="grid g3">{% assign gs = site.guides | sort: "order" %}{% for g in gs %}<a class="card link" href="{{ page.root }}{{ g.url }}"><div class="meta">{{ g.cat }} · {{ g.mins }} min read</div><h3>{{ g.headline }}</h3><p class="muted" style="margin:0">{{ g.desc }}</p></a>{% endfor %}</div>
+</div></section>
+
+<section class="section alt"><div class="wrap">
+  <div class="lead-band">
+    <div><h2>Rather have a plan than read ten articles?</h2><p>Tell us your child's age and what they're working on. We'll email a free 30-day plan that uses the right tools in the right order — and, if you'd like, match you with tutors or programs in your budget.</p></div>
+    <div class="btn-row"><a class="btn btn-sun btn-lg" href="{{ page.root }}/get-started.html?from=guides-hub">Get my free plan</a><a class="btn btn-ghost" style="background:transparent;color:#fff;border-color:#4a5578" href="{{ page.root }}/readiness.html">Take the readiness check</a></div>
+  </div>
+</div></section>
+
+<section class="section"><div class="wrap narrow prose">
+  <h2>How we write our guides</h2>
+  <p>Our guides are written by the ABC.Academy editorial team for parents and teachers of children ages 2–8. We draw on widely accepted early-literacy and early-math practice, keep advice practical and avoid jargon. Guides are reviewed regularly and updated when practice or evidence changes.</p>
+  <p>Guides are general education, not medical or psychological advice. Spot an error or want a topic covered? <a href="{{ page.root }}/contact.html">Tell us</a>.</p>
+</div></section>

@@ -1,0 +1,37 @@
+---
+title: "Free Learning Games for Kids: Letters, Rhymes, Spelling & Counting | ABC.Academy"
+desc: "Eight free learning games for ages 3–7: Letter Pop, Big & Little Match, First Sound, Missing Letter, Rhyme Time, Count & Tap, Spell It and Sight Word Hunt."
+slug: "games"
+crumb: "Free Learning Games for Kids"
+js: ["games.js"]
+---
+<section class="page-head"><div class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="{{ page.root }}/index.html">Home</a> / Games</nav>
+  <h1>Learning games</h1>
+  <p class="lede">Eight short games, eight rounds each. Every game talks, so pre-readers can play on their own. Pick one to start.</p>
+</div></section>
+
+<section class="section"><div class="wrap">
+  <div class="game-picker" id="game-picker">
+    <button data-game="pop"><span class="emo">🫧</span><b>Letter Pop</b><span>Find and pop the letter you hear</span></button>
+    <button data-game="memory"><span class="emo">🃏</span><b>Big & Little Match</b><span>Pair uppercase with lowercase</span></button>
+    <button data-game="first"><span class="emo">🐻</span><b>First Sound</b><span>Which letter starts the word?</span></button>
+    <button data-game="missing"><span class="emo">❓</span><b>Missing Letter</b><span>Fill the gap in A B C order</span></button>
+    <button data-game="rhyme"><span class="emo">🎩</span><b>Rhyme Time</b><span>Find the word that rhymes</span></button>
+    <button data-game="count"><span class="emo">🐞</span><b>Count & Tap</b><span>Count the pictures 1 to 10</span></button>
+    <button data-game="spell"><span class="emo">🔤</span><b>Spell It</b><span>Spell a three-letter word</span></button>
+    <button data-game="hunt"><span class="emo">🔎</span><b>Sight Word Hunt</b><span>Tap the word you hear</span></button>
+  </div>
+
+  <div class="stage" id="stage" style="margin-top:1.5rem">
+    <div class="stage-top"><h2 id="game-title" style="margin:0;font-size:1.5rem">Letter Pop</h2><div class="btn-row"><span class="small muted" id="game-round"></span><span class="stars">⭐ <span data-stars>0</span></span><button class="btn btn-ghost btn-sm" id="restart">Restart</button></div></div>
+    <div id="game-body"></div>
+    <div class="celebrate" id="celebrate"><div><div style="font-size:4rem">🎉</div><h2>You did it!</h2><p class="lede">Three bonus stars for finishing the game.</p><div class="btn-row" style="justify-content:center"><button class="btn btn-primary" id="again">Play again</button><a class="btn btn-ghost" href="{{ page.root }}/worksheets.html?type=cert">Print a certificate</a></div></div></div>
+  </div>
+</div></section>
+
+<section class="section alt"><div class="wrap grid g3">
+  <div class="card"><h3>Made for little hands</h3><p class="muted" style="margin:0">Big tap targets, no timers in most games and spoken prompts, so children who can't read yet can still play.</p></div>
+  <div class="card"><h3>Learning first</h3><p class="muted" style="margin:0">Every game practices one skill from our alphabet, phonics, sight word or math tools. Mistakes get a spoken hint, never a buzzer.</p></div>
+  <div class="card"><h3>Short sessions</h3><p class="muted" style="margin:0">Each game is about three minutes. Two or three rounds a day is the sweet spot for ages 3–6.</p></div>
+</div></section>

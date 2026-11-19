@@ -1,0 +1,33 @@
+---
+title: "Free Kindergarten & Reading Readiness Check (5 Minutes) | ABC.Academy"
+desc: "Answer 12 quick questions about your child to see strengths in letters, early reading, numbers and writing — with next steps for each."
+slug: "readiness"
+crumb: "Free Kindergarten & Reading Readiness Check (5 Minutes)"
+js: ["readiness.js"]
+---
+<section class="page-head"><div class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="{{ page.root }}/index.html">Home</a> / Parents / Readiness check</nav>
+  <h1>Reading & school readiness check</h1>
+  <p class="lede">Twelve quick questions, about five minutes. Answer based on what your child does most days. You'll get a snapshot of four skill areas and what to practice next.</p>
+</div></section>
+
+<section class="section"><div class="wrap narrow">
+  <form id="rq" novalidate>
+    <div class="q-card" style="margin-bottom:1rem">
+      <label class="legend" for="age">How old is your child?</label>
+      <select id="age" name="age" required style="margin-top:.6rem">
+        <option value="">Choose an age</option><option value="3">3 years</option><option value="4">4 years (Pre-K)</option><option value="5">5 years (Kindergarten)</option><option value="6">6 years (Grade 1)</option><option value="7">7–8 years (Grade 2+)</option>
+      </select>
+    </div>
+    <div id="rq-items"></div>
+    <button class="btn btn-primary btn-lg" type="submit" style="width:100%">See my child's results</button>
+    <p class="form-note">Answers stay in your browser. Nothing is sent unless you choose to request a plan afterwards.</p>
+  </form>
+  <div id="rq-result" hidden style="margin-top:2rem"></div>
+</div></section>
+
+<section class="section alt"><div class="wrap narrow prose">
+  <h2>What this check looks at</h2>
+  <p>The questions cover four areas that kindergarten and first-grade teachers commonly look for: knowing letters and their sounds, early reading skills like rhyming and retelling, number sense, and the fine-motor control and focus that writing needs.</p>
+  <p>Every child develops at their own pace, and a "not yet" today is normal — especially for younger children. Use the results to decide what to practice, not to label your child. Our <a href="{{ page.root }}/guides/kindergarten-readiness-checklist.html">kindergarten readiness checklist</a> explains each skill in more depth.</p>
+</div></section>
