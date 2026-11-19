@@ -1,0 +1,67 @@
+---
+title: "Phonics Lab: CVC Word Builder, Digraphs, Blends & Magic E | ABC.Academy"
+desc: "Build and blend CVC words, explore sh, ch and th, practice consonant blends and see how magic e changes a word. Free phonics practice with sound."
+slug: "phonics"
+crumb: "Phonics Lab"
+js: ["phonics.js"]
+---
+<section class="page-head"><div class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="{{ page.root }}/index.html">Home</a> / Learn / Phonics</nav>
+  <h1>Phonics lab</h1>
+  <p class="lede">Turn letter sounds into real words. Build a word, hear it blended sound by sound, then explore the letter teams that make new sounds.</p>
+</div></section>
+
+<section class="section"><div class="wrap">
+  <div class="tool">
+    <div class="tool-bar"><h2 style="margin:0;font-size:1.5rem">Word builder</h2><span class="stars">⭐ <span data-stars>0</span> stars</span></div>
+    <p class="muted" style="margin:0">Pick a first sound and a word family. Real words show a picture; silly words are still great reading practice.</p>
+    <div class="builder">
+      <label class="sr-only" for="onset">First sound</label><select id="onset"></select>
+      <span class="eq">+</span>
+      <label class="sr-only" for="rime">Word family</label><select id="rime"></select>
+      <span class="eq">=</span>
+    </div>
+    <div class="result-word" id="built-word" aria-live="polite"></div>
+    <p class="result-note" id="built-note"></p>
+    <div class="btn-row" style="justify-content:center"><button class="btn btn-primary" id="sound-out">🔊 Sound it out</button><button class="btn btn-ghost" id="random-word">Surprise word</button><a class="btn btn-ghost" href="{{ page.root }}/worksheets.html?type=cvc">Print CVC sheet</a></div>
+    <h3 style="margin-top:1.8rem">Words in this family</h3>
+    <div class="word-list" id="family-list" style="justify-content:flex-start"></div>
+  </div>
+</div></section>
+
+<section class="section alt"><div class="wrap grid g2" style="gap:1.5rem">
+  <div class="tool">
+    <h2 style="font-size:1.5rem">Letter teams (digraphs)</h2>
+    <p class="muted">Two letters, one new sound. Tap a team to hear it.</p>
+    <div class="btn-row" id="digraph-btns"></div>
+    <div class="word-list" id="digraph-words" style="justify-content:flex-start;margin-top:1.2rem"></div>
+  </div>
+  <div class="tool">
+    <h2 style="font-size:1.5rem">Blends</h2>
+    <p class="muted">Two consonants side by side — you can still hear both. Tap a blend.</p>
+    <div class="chips" id="blend-btns"></div>
+    <div class="word-list" id="blend-words" style="justify-content:flex-start;margin-top:1.2rem"></div>
+  </div>
+</div></section>
+
+<section class="section"><div class="wrap">
+  <div class="tool" id="magic-e" style="text-align:center">
+    <h2 style="font-size:1.5rem">Magic e</h2>
+    <p class="muted">Add an e to the end and the vowel says its name. cap becomes cape, kit becomes kite.</p>
+    <div class="result-word" id="me-word" style="margin:1.4rem 0">cap</div>
+    <div class="btn-row" style="justify-content:center"><button class="btn btn-primary" id="me-toggle">Add magic e</button><button class="btn btn-ghost" id="me-next">Next word</button></div>
+  </div>
+</div></section>
+
+<section class="section alt"><div class="wrap narrow prose">
+  <h2>A simple order for teaching phonics</h2>
+  <p>Phonics works best in a steady sequence where each step builds on the one before:</p>
+  <ol>
+    <li><b>Letter sounds.</b> Children need quick, confident sounds for most single letters first.</li>
+    <li><b>Blending CVC words.</b> Consonant–vowel–consonant words like <i>cat</i>, <i>pig</i> and <i>sun</i>. Say each sound, then push them together.</li>
+    <li><b>Word families.</b> Change only the first sound (<i>cat, hat, mat</i>) so the rest feels familiar.</li>
+    <li><b>Digraphs and blends.</b> Letter teams like <i>sh</i> and <i>ch</i>, and blends like <i>st</i> and <i>fr</i>.</li>
+    <li><b>Magic e and vowel teams.</b> Long vowel patterns such as <i>cake</i>, <i>kite</i> and <i>rain</i>.</li>
+  </ol>
+  <p>Ten minutes a day is plenty. Finish with a short read so new skills turn into real reading — try our <a href="{{ page.root }}/stories.html">decodable stories</a>. For more detail, read <a href="{{ page.root }}/guides/cvc-words-blending.html">how to teach blending step by step</a>.</p>
+</div></section>

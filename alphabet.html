@@ -1,0 +1,63 @@
+---
+title: "Alphabet Explorer: Letter Sounds, Words & Tracing | ABC.Academy"
+desc: "Tap any letter A to Z to hear its name and sound, see picture words and trace it on screen. Free interactive alphabet for preschool and kindergarten."
+slug: "alphabet"
+crumb: "Alphabet Explorer"
+js: ["alphabet.js"]
+---
+<section class="page-head"><div class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="{{ page.root }}/index.html">Home</a> / Learn / Alphabet</nav>
+  <h1>Alphabet explorer</h1>
+  <p class="lede">Tap a letter to hear its name and sound, meet four picture words, then trace it with a finger or mouse. Every traced letter earns a star.</p>
+</div></section>
+
+<section class="section"><div class="wrap">
+  <div class="tool">
+    <div class="tool-bar"><div class="btn-row"><button class="btn btn-ghost btn-sm" id="sing-all">Say A to Z</button><a class="btn btn-ghost btn-sm" href="{{ page.root }}/worksheets.html?type=letter">Print letter sheets</a></div><span class="stars">⭐ <span data-stars>0</span> stars</span></div>
+    <div class="letter-grid" id="letter-grid" aria-label="Choose a letter"></div>
+    <div class="letter-stage">
+      <div class="letter-card">
+        <div class="letter-big" aria-live="polite"><span id="big-upper">A</span><span id="big-lower">a</span></div>
+        <p id="sound-line" style="font-size:1.2rem;margin:.6rem 0 0"></p>
+        <div class="word-list" id="letter-words"></div>
+        <div class="btn-row" style="justify-content:center;margin-top:1.2rem">
+          <button class="btn btn-ghost" id="prev-letter" aria-label="Previous letter">Back</button>
+          <button class="btn btn-primary" id="hear-letter">🔊 Hear the letter</button>
+          <button class="btn btn-ghost" id="next-letter" aria-label="Next letter">Next</button>
+        </div>
+      </div>
+      <div>
+        <div class="trace-wrap"><canvas id="trace" aria-label="Tracing area. Draw over the dotted letter."></canvas></div>
+        <div class="trace-tools">
+          <button class="swatch" style="background:#E5484D" data-c="#E5484D" aria-pressed="true" aria-label="Red crayon"></button>
+          <button class="swatch" style="background:#2F7FF0" data-c="#2F7FF0" aria-pressed="false" aria-label="Blue crayon"></button>
+          <button class="swatch" style="background:#22A86B" data-c="#22A86B" aria-pressed="false" aria-label="Green crayon"></button>
+          <button class="swatch" style="background:#7C5CE6" data-c="#7C5CE6" aria-pressed="false" aria-label="Purple crayon"></button>
+          <button class="btn btn-ghost btn-sm" id="case-toggle">Switch to lowercase</button>
+          <button class="btn btn-ghost btn-sm" id="clear-trace">Clear</button>
+          <button class="btn btn-ink btn-sm" id="done-trace">I did it ⭐</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<section class="section alt"><div class="wrap grid g2" style="gap:3rem">
+  <div class="prose">
+    <h2>How to use the alphabet explorer</h2>
+    <p>Children learn letters fastest when they connect three things at once: the letter's <b>shape</b>, its <b>name</b> and the <b>sound</b> it makes. This page does all three in one tap.</p>
+    <ol>
+      <li><b>Tap and listen.</b> Your child hears "B. B says buh. B is for ball." Ask them to repeat it.</li>
+      <li><b>Find the pictures.</b> Tap each picture word and say the first sound together, stretching it out: "bbbb-ball."</li>
+      <li><b>Trace big.</b> Start at the top line, follow the dotted letter, and say the sound while tracing.</li>
+      <li><b>Do three a day.</b> Three letters a day, revisited often, beats all 26 in one sitting.</li>
+    </ol>
+    <p>Prefer paper? <a href="{{ page.root }}/worksheets.html?type=letter">Print a tracing sheet</a> for any letter. Ready for words? Move on to the <a href="{{ page.root }}/phonics.html">phonics lab</a>.</p>
+  </div>
+  <div class="prose">
+    <h2>Which letters should come first?</h2>
+    <p>Many teachers start with letters that are common and easy to say, such as <b>s, a, t, p, i, n</b> — together they make dozens of short words like <i>sat, pin, tap</i> and <i>nap</i>. Letters in your child's name are another great starting point because they already care about them.</p>
+    <p>Teach easily-confused pairs like <b>b</b> and <b>d</b> on different days. When both are familiar, compare them side by side.</p>
+    <p>Read the full <a href="{{ page.root }}/guides/teach-alphabet.html">6-step guide to teaching the alphabet</a>.</p>
+  </div>
+</div></section>

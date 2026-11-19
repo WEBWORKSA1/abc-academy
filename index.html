@@ -1,0 +1,137 @@
+---
+title: "ABC.Academy — Free Alphabet, Phonics, Reading & Math for Ages 2–8"
+desc: "Free early learning for ages 2–8: interactive alphabet, phonics, sight words, math games, read-along stories and printable worksheets. Built for parents and teachers."
+slug: "index"
+exit: true
+---
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <h1><span class="hero-line">Learn to read,</span><span class="hero-line">write and count.</span><span class="hero-line">Free, one letter</span><span class="hero-line">at a time.</span></h1>
+      <p class="lede">Interactive alphabet, phonics, sight words, math games, read-along stories and printable worksheets for children ages 2–8 — built for the grown-ups who teach them.</p>
+      <div class="btn-row">
+        <a class="btn btn-primary btn-lg" href="{{ page.root }}/alphabet.html">Start with the alphabet</a>
+        <a class="btn btn-ghost btn-lg" href="{{ page.root }}/readiness.html">Check my child's skills</a>
+      </div>
+      <ul class="hero-trust">
+        <li>No sign-up to play</li><li>Works on phones and tablets</li><li>Every tool talks out loud</li>
+      </ul>
+    </div>
+    <div class="board">
+      <div class="board-head"><h2>Tap a letter to hear it</h2><span class="small muted">⭐ <span data-stars>0</span> stars</span></div>
+      <div class="alpha-wall drop-in" id="alpha-wall"></div>
+      <div class="board-foot"><span class="said" id="said" aria-live="polite">A is for apple 🍎</span><a href="{{ page.root }}/alphabet.html">Trace letters</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head row"><div><h2>Today at the Academy</h2><p class="muted" style="margin:0">A new letter, word and number puzzle every day.</p></div></div>
+    <div class="daily">
+      <div class="card"><h3>Letter of the day</h3><div id="daily-letter"><p class="muted">Loading…</p></div></div>
+      <div class="card"><h3>Word of the day</h3><div id="daily-word"><p class="muted">Loading…</p></div></div>
+      <div class="card"><h3>Number puzzle</h3><div id="daily-challenge"><p class="muted">Loading…</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap">
+    <div class="section-head"><h2>Everything a young learner needs, in one place</h2><p class="lede">Each tool focuses on one skill, takes about ten minutes and gives your child something to tap, say or trace.</p></div>
+    <div class="shelf">
+      <a href="{{ page.root }}/alphabet.html"><span class="block c-red">Aa</span><div><h3>Alphabet explorer</h3><p>Hear every letter's name and sound, see picture words, trace with a finger.</p></div></a>
+      <a href="{{ page.root }}/phonics.html"><span class="block c-sky">at</span><div><h3>Phonics lab</h3><p>Build CVC words, blend sounds, discover sh, ch, th and magic e.</p></div></a>
+      <a href="{{ page.root }}/sight-words.html"><span class="block c-leaf">the</span><div><h3>Sight words</h3><p>All 315 Dolch words with flashcards, a listening quiz and a word wall.</p></div></a>
+      <a href="{{ page.root }}/math.html"><span class="block c-sun">12</span><div><h3>Numbers & math</h3><p>Counting, ten frames, addition and subtraction, a 100 chart.</p></div></a>
+      <a href="{{ page.root }}/games.html"><span class="block c-grape">🎮</span><div><h3>Learning games</h3><p>Eight quick games: Letter Pop, Rhyme Time, Spell It and more.</p></div></a>
+      <a href="{{ page.root }}/worksheets.html"><span class="block c-red">✏️</span><div><h3>Worksheet generator</h3><p>Name tracing, letters, sight words and math sheets — print in seconds.</p></div></a>
+      <a href="{{ page.root }}/stories.html"><span class="block c-sky">📖</span><div><h3>Story time</h3><p>Decodable read-along stories with highlighted words and questions.</p></div></a>
+      <a href="{{ page.root }}/videos.html"><span class="block c-leaf">▶</span><div><h3>Video library</h3><p>Hand-picked songs and lessons, refreshed automatically.</p></div></a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="lead-band">
+      <div>
+        <h2>Not sure where your child is? Find out in five minutes.</h2>
+        <p>Answer 12 quick questions about letters, early reading, numbers and writing. You'll see where your child is strong, what to practice next, and you can get a free 30-day plan made for them.</p>
+        <ul><li>Built on common kindergarten-readiness skills</li><li>Instant results with links to the right tools</li><li>Optional matching with vetted tutors and programs in your budget</li></ul>
+        <div class="btn-row"><a class="btn btn-sun btn-lg" href="{{ page.root }}/readiness.html">Start the readiness check</a><a class="btn btn-ghost" href="{{ page.root }}/get-started.html" style="background:transparent;color:#fff;border-color:#4a5578">Skip to the free plan</a></div>
+      </div>
+      <form class="form-card" data-form="Learning plan (home)">
+        <h3 style="margin-top:0">Get the free 30-day plan</h3>
+        <div class="field"><label for="h-age">Child's age</label><select id="h-age" name="child_age" required><option value="">Choose an age</option><option>2-3</option><option>4 (Pre-K)</option><option>5 (Kindergarten)</option><option>6 (Grade 1)</option><option>7-8</option></select></div>
+        <div class="field"><label for="h-focus">What should we focus on?</label><select id="h-focus" name="focus" required><option value="">Choose a focus</option><option>Letters & sounds</option><option>Phonics & reading</option><option>Sight words</option><option>Numbers & math</option><option>Handwriting</option><option>School readiness</option></select></div>
+        <div class="field"><label for="h-email">Parent email</label><input id="h-email" type="email" name="email" required autocomplete="email" placeholder="you@example.com"></div>
+        <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off"><input type="hidden" name="source" value="home-band">
+        <label class="check"><input type="checkbox" name="consent" value="yes" required> I'm 18+ and a parent, guardian or teacher. Email me the plan.</label>
+        <button class="btn btn-primary" type="submit" style="width:100%">Email me the plan</button>
+        <p class="form-note">Free. No spam. We never ask for children's personal information.</p>
+        <div class="form-done"><div class="block c-leaf" style="cursor:default">✓</div><h3>Your plan is on its way</h3><p class="muted">Want tutor matches too? <a href="{{ page.root }}/get-started.html">Add a few details</a>.</p></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap">
+    <div class="section-head row"><div><h2>Watch and sing along</h2><p class="muted" style="margin:0">Alphabet songs, phonics and counting videos from trusted kids' channels.</p></div><a class="btn btn-ghost" href="{{ page.root }}/videos.html">See all videos</a></div>
+    <div class="video-grid" id="home-videos"><p class="muted">Loading videos…</p></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="grid g2" style="align-items:center;gap:2.5rem">
+      <div>
+        <h2>Print a name-tracing sheet in ten seconds</h2>
+        <p class="lede">Type your child's name, pick a style and print. Our generator also makes letter, sight-word, number and math sheets — plus certificates to celebrate every win.</p>
+        <div class="btn-row"><a class="btn btn-ink btn-lg" href="{{ page.root }}/worksheets.html?type=name">Make a name sheet</a><a class="btn btn-ghost" href="{{ page.root }}/worksheets.html">All worksheet types</a></div>
+      </div>
+      <div class="panel" aria-hidden="true" style="font-family:var(--display)">
+        <div class="trace-row" style="font-size:44px"><span class="solid">Maya</span><span class="ghost">&nbsp;Maya Maya</span></div>
+        <div class="trace-row" style="font-size:44px"><span class="ghost">Maya Maya Maya</span></div>
+        <div class="trace-row" style="font-size:44px"><span class="ghost">abc abc abc abc</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap">
+    <div class="section-head row"><div><h2>Guides for parents and teachers</h2><p class="muted" style="margin:0">Clear, practical advice on teaching early reading and math at home.</p></div><a class="btn btn-ghost" href="{{ page.root }}/guides.html">All guides</a></div>
+    <div class="grid g3">{% assign gs = site.guides | sort: "order" %}{% for g in gs limit: 6 %}<a class="card link" href="{{ page.root }}{{ g.url }}"><div class="meta">{{ g.cat }} · {{ g.mins }} min read</div><h3>{{ g.headline }}</h3><p class="muted" style="margin:0">{{ g.desc }}</p></a>{% endfor %}</div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head"><h2>Join the ABC.Academy community</h2></div>
+    <div class="grid g4">
+      <a class="card link" href="{{ page.root }}/contests.html"><span class="block c-sun" style="cursor:inherit">🏆</span><h3 style="margin-top:1rem">Monthly contest</h3><p class="muted" style="margin:0">A new creative theme each month. Free to enter, real prizes.</p></a>
+      <a class="card link" href="{{ page.root }}/support.html"><span class="block c-red" style="cursor:inherit">♥</span><h3 style="margin-top:1rem">Support free learning</h3><p class="muted" style="margin:0">Donations fund new lessons, educators and contest prizes.</p></a>
+      <a class="card link" href="{{ page.root }}/careers.html"><span class="block c-leaf" style="cursor:inherit">✎</span><h3 style="margin-top:1rem">Work with us</h3><p class="muted" style="margin:0">Writers, illustrators, narrators, teachers and developers.</p></a>
+      <a class="card link" href="{{ page.root }}/partners.html"><span class="block c-grape" style="cursor:inherit">🤝</span><h3 style="margin-top:1rem">Sponsor & advertise</h3><p class="muted" style="margin:0">Reach families and teachers of kids ages 2–8.</p></a>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap grid g2" style="gap:3rem;align-items:start">
+    <div>
+      <div class="section-head row" style="margin-bottom:1rem"><h2 style="margin:0">Early learning news</h2><a href="{{ page.root }}/news.html">More headlines</a></div>
+      <ul class="news-list" id="home-news"><li class="muted">Loading headlines…</li></ul>
+    </div>
+    <div class="faq">
+      <h2>Questions parents ask</h2>
+      <details><summary>Is ABC.Academy really free?</summary><p>Yes. Every tool, game, story and printable is free with no account. The site is supported by advertising, sponsors and donations.</p></details>
+      <details><summary>What ages is it for?</summary><p>Children roughly 2 to 8 years old — toddlers learning letter names through second graders building reading fluency and math facts.</p></details>
+      <details><summary>Do children need an account?</summary><p>No. Children never sign up or enter personal information. Stars and progress are saved only in your browser on this device.</p></details>
+      <details><summary>Can teachers use it in class?</summary><p>Yes. The tools work on interactive whiteboards, and printables are free for classroom use. See our <a href="{{ page.root }}/terms.html">terms</a> for details.</p></details>
+      <details><summary>How do I get help for a struggling reader?</summary><p>Start with the <a href="{{ page.root }}/readiness.html">readiness check</a>, then request a <a href="{{ page.root }}/get-started.html">free learning plan</a>. If you want, we'll also match you with tutors or programs that fit your budget.</p></details>
+    </div>
+  </div>
+</section>

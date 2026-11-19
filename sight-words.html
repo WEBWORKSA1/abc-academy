@@ -1,0 +1,63 @@
+---
+title: "Sight Words Practice: All Dolch Lists with Flashcards & Quiz | ABC.Academy"
+desc: "All 315 Dolch sight words from pre-primer to third grade and nouns. Flashcards, a listening quiz, a word wall and printable tracing sheets."
+slug: "sight-words"
+crumb: "Sight Words Practice"
+js: ["sightwords.js"]
+---
+<section class="page-head"><div class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="{{ page.root }}/index.html">Home</a> / Learn / Sight words</nav>
+  <h1>Sight words practice</h1>
+  <p class="lede">All 315 Dolch sight words, from pre-primer to third grade plus the noun list. Practice with flashcards, test listening with the quiz, or read the whole word wall.</p>
+</div></section>
+
+<section class="section"><div class="wrap">
+  <div class="tool">
+    <div class="chips" id="list-tabs" aria-label="Choose a word list"></div>
+    <div class="tool-bar" style="margin-top:1.2rem">
+      <div class="toggle" role="group" aria-label="Practice mode">
+        <button data-mode="cards" aria-pressed="true">Flashcards</button><button data-mode="quiz" aria-pressed="false">Listening quiz</button><button data-mode="wall" aria-pressed="false">Word wall</button>
+      </div>
+      <span class="stars">⭐ <span data-stars>0</span> stars</span>
+    </div>
+    <p class="small muted" id="sw-stat" style="margin:.2rem 0 .4rem"></p>
+    <div class="progress-dots" id="sw-dots" aria-hidden="true"></div>
+
+    <div id="mode-cards">
+      <div class="flash" id="sw-card" aria-live="polite">the</div>
+      <div class="btn-row" style="justify-content:center">
+        <button class="btn btn-ghost" id="sw-hear">🔊 Hear it</button>
+        <button class="btn btn-primary" id="sw-know">I can read it ✓</button>
+        <button class="btn btn-ghost" id="sw-again">Practice again</button>
+      </div>
+    </div>
+    <div id="mode-quiz" hidden>
+      <p class="prompt-line" id="quiz-msg"></p>
+      <div style="text-align:center"><button class="btn btn-ghost" id="quiz-hear">🔊 Hear the word again</button></div>
+      <div class="quiz-opts" id="quiz-opts"></div>
+    </div>
+    <div id="mode-wall" hidden>
+      <div class="word-list" id="sw-wall" style="justify-content:flex-start;margin-top:1rem"></div>
+    </div>
+    <div class="btn-row" style="margin-top:1.5rem"><button class="btn btn-ghost btn-sm" id="sw-print">Print a tracing sheet for this list</button><button class="btn btn-ghost btn-sm" id="sw-reset">Reset this list</button></div>
+  </div>
+</div></section>
+
+<section class="section alt"><div class="wrap grid g2" style="gap:3rem">
+  <div class="prose">
+    <h2>What are sight words?</h2>
+    <p>Sight words are the short, very common words that show up again and again in children's books — <i>the, and, said, was, you</i>. Learning to read them instantly frees a young reader to focus on the harder words in a sentence.</p>
+    <p>Many sight words can be sounded out (<i>and, big, run</i>); others have tricky parts (<i>said, was, one</i>). Point out the regular parts and practice only the tricky bit.</p>
+    <p>The Dolch lists were compiled by Edward William Dolch from children's books of his time and remain among the most widely used lists in kindergarten through third grade.</p>
+  </div>
+  <div class="prose">
+    <h2>A 5-minute daily routine</h2>
+    <ol>
+      <li>Flash 5 known words for a quick, confident warm-up.</li>
+      <li>Add 2–3 new words. Say each, spell it aloud, say it again.</li>
+      <li>Play one round of the listening quiz.</li>
+      <li>Find today's words in a real book.</li>
+    </ol>
+    <p>Mastered words get a green square and are saved on this device. Compare the lists in our <a href="{{ page.root }}/guides/sight-words-dolch-fry.html">Dolch vs. Fry guide</a>.</p>
+  </div>
+</div></section>

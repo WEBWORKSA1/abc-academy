@@ -1,0 +1,61 @@
+---
+title: "Kindergarten Math: Counting, Ten Frames, Addition & 100 Chart | ABC.Academy"
+desc: "Free early math practice: count objects, build ten frames, practice addition and subtraction facts and explore a 100 chart with skip counting."
+slug: "math"
+crumb: "Kindergarten Math"
+js: ["math.js"]
+---
+<section class="page-head"><div class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="{{ page.root }}/index.html">Home</a> / Learn / Numbers & math</nav>
+  <h1>Numbers & math</h1>
+  <p class="lede">Four hands-on tools for the early math path: count real objects, build tens, practice facts, and find patterns on the 100 chart.</p>
+</div></section>
+
+<section class="section"><div class="wrap grid g2" style="gap:1.5rem">
+  <div class="tool">
+    <div class="tool-bar"><h2 style="margin:0;font-size:1.5rem">Count it</h2>
+      <label class="small">Up to <select id="count-level" style="width:auto;padding:.3rem .5rem"><option value="5">5</option><option value="10" selected>10</option><option value="20">20</option></select></label></div>
+    <div class="count-area" id="count-area" aria-live="polite"></div>
+    <div class="quiz-opts" id="count-opts"></div>
+    <div style="text-align:center;margin-top:1rem"><button class="btn btn-ghost btn-sm" id="count-say">Count them with me</button></div>
+  </div>
+  <div class="tool">
+    <div class="tool-bar"><h2 style="margin:0;font-size:1.5rem">Ten frame</h2><span class="stars">⭐ <span data-stars>0</span></span></div>
+    <p class="muted" style="margin:0">Tap boxes to add counters. How many more make ten?</p>
+    <div class="tenframe" id="tenframe"></div>
+    <p class="result-note" id="tf-out" aria-live="polite"></p>
+    <div class="btn-row" style="justify-content:center"><button class="btn btn-ghost btn-sm" id="tf-random">Show a mystery number</button><button class="btn btn-ghost btn-sm" id="tf-clear">Clear</button></div>
+  </div>
+</div></section>
+
+<section class="section alt"><div class="wrap grid g2" style="gap:1.5rem">
+  <div class="tool">
+    <h2 style="font-size:1.5rem">Fact practice</h2>
+    <div class="btn-row">
+      <label class="small">Type <select id="pop" style="width:auto;padding:.3rem .5rem"><option value="+">Addition</option><option value="−">Subtraction</option><option value="mix">Mixed</option></select></label>
+      <label class="small">Within <select id="plv" style="width:auto;padding:.3rem .5rem"><option>5</option><option selected>10</option><option>20</option></select></label>
+    </div>
+    <div class="mathq" id="pq" aria-live="polite"></div>
+    <form id="pform" style="display:flex;gap:.6rem;max-width:320px;margin:0 auto"><label class="sr-only" for="pa">Your answer</label><input id="pa" type="number" inputmode="numeric" min="0" max="40" style="font-size:1.4rem;text-align:center"><button class="btn btn-primary" type="submit">Check</button></form>
+    <p class="result-note" id="pmsg" style="margin-top:.8rem"></p>
+    <div style="text-align:center"><button class="btn btn-ghost btn-sm" id="p-print">Print 20 problems like these</button></div>
+  </div>
+  <div class="tool">
+    <div class="tool-bar"><h2 style="margin:0;font-size:1.5rem">100 chart</h2>
+      <label class="small">Highlight <select id="skip" style="width:auto;padding:.3rem .5rem"><option value="">Nothing</option><option value="2">Count by 2s</option><option value="5">Count by 5s</option><option value="10">Count by 10s</option><option value="odd">Odd numbers</option><option value="even">Even numbers</option></select></label></div>
+    <div class="hundred" id="hundred"></div>
+  </div>
+</div></section>
+
+<section class="section"><div class="wrap narrow prose">
+  <h2>The early math path, ages 2 to 8</h2>
+  <table>
+    <tr><th>Stage</th><th>What it looks like</th><th>Try</th></tr>
+    <tr><td>Counting words</td><td>Says "one, two, three…" in order, often before understanding it</td><td>Counting songs, stairs, snacks</td></tr>
+    <tr><td>One-to-one counting</td><td>Touches each object once while counting; knows the last number is "how many"</td><td>Count it (up to 5, then 10)</td></tr>
+    <tr><td>Subitizing</td><td>Sees small groups (up to 5) without counting</td><td>Ten frame mystery numbers</td></tr>
+    <tr><td>Combining and separating</td><td>Adds and takes away with objects and fingers</td><td>Fact practice within 5, then 10</td></tr>
+    <tr><td>Place value</td><td>Understands 14 as one ten and four ones</td><td>100 chart, count by 10s</td></tr>
+  </table>
+  <p>Read <a href="{{ page.root }}/guides/early-math-at-home.html">Early math at home</a> for everyday activities that build number sense, or print <a href="{{ page.root }}/worksheets.html?type=math">math worksheets</a>.</p>
+</div></section>
