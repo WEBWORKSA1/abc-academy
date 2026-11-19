@@ -1,0 +1,37 @@
+---
+title: "Contact ABC.Academy"
+desc: "Questions, feedback, corrections or partnership ideas — send us a message."
+slug: "contact"
+crumb: "Contact ABC.Academy"
+---
+<section class="page-head"><div class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="{{ page.root }}/index.html">Home</a> / Contact</nav>
+  <h1>Contact us</h1>
+  <p class="lede">Questions, feedback, a bug, a correction, or an idea for a new tool — send a message and we'll reply within two business days.</p>
+</div></section>
+
+<section class="section"><div class="wrap grid g2" style="gap:3rem;align-items:start">
+  <form class="form-card" data-form="Contact message">
+    <div class="row2">
+      <div class="field"><label for="ct-name">Name</label><input id="ct-name" name="name" type="text" required autocomplete="name"></div>
+      <div class="field"><label for="ct-email">Email</label><input id="ct-email" name="email" type="email" required autocomplete="email"></div>
+    </div>
+    <div class="field"><label for="ct-topic">Topic</label><select id="ct-topic" name="topic" required><option value="">Choose a topic</option><option>General question</option><option>Feedback or idea</option><option>Report a problem</option><option>Correction to a guide</option><option>Video creator request</option><option>Press</option><option>Partnership or advertising</option><option>Privacy request</option></select></div>
+    <div class="field"><label for="ct-msg">Message</label><textarea id="ct-msg" name="message" required maxlength="3000"></textarea></div>
+    <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off">
+    <label class="check"><input type="checkbox" name="adult" value="yes" required> I'm 18 or older (children: please ask a grown-up to write to us).</label>
+    <button class="btn btn-primary" type="submit">Send message</button>
+    <div class="form-done"><div class="block c-sky" style="cursor:default">✉</div><h3>Message sent</h3><p class="muted">Thanks for writing. We'll reply within two business days.</p></div>
+  </form>
+  <div>
+    <div class="panel ruled-top"><h2 style="font-size:1.4rem">Looking for something specific?</h2>
+      <ul class="trust-list">
+        <li><span>Help for your child: <a href="{{ page.root }}/get-started.html">free learning plan & tutor match</a></span></li>
+        <li><span>Sponsorship, ads or school programs: <a href="{{ page.root }}/partners.html">partner with us</a></span></li>
+        <li><span>Work with us: <a href="{{ page.root }}/careers.html">open roles</a></span></li>
+        <li><span>Contest questions: <a href="{{ page.root }}/contests.html">contest rules</a></span></li>
+        <li><span>Interested in buying this website or domain: use the contact link at the top of every page</span></li>
+      </ul>
+    </div>
+  </div>
+</div></section>
