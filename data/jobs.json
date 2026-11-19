@@ -1,0 +1,13 @@
+{
+  "jobs": [
+    {"title": "Early-Childhood Content Writer", "type": "Freelance", "location": "Remote", "summary": "Write clear, practical parent guides and activity ideas for ages 2–8. Teaching or early-literacy background preferred."},
+    {"title": "Children's Illustrator", "type": "Freelance", "location": "Remote", "summary": "Create friendly, original illustrations for stories, letters and worksheets in a consistent style."},
+    {"title": "Decodable Story Author", "type": "Per project", "location": "Remote", "summary": "Write short decodable stories that follow a phonics sequence and still feel fun to read."},
+    {"title": "Voice Narrator (Kids)", "type": "Per project", "location": "Remote", "summary": "Record warm, clear narration for stories and letter sounds. Home studio quality required."},
+    {"title": "Phonics Curriculum Specialist", "type": "Part-time", "location": "Remote", "summary": "Review lessons for accuracy and sequence, and design new skill paths. Structured-literacy training a plus."},
+    {"title": "Front-End Developer (Games)", "type": "Freelance", "location": "Remote", "summary": "Build lightweight, accessible HTML/JS learning games that work on any phone or tablet."},
+    {"title": "Community & Social Media Manager", "type": "Part-time", "location": "Remote", "summary": "Grow our parent and teacher community, run the monthly contest and share winners."},
+    {"title": "Partnerships & Sponsorship Lead", "type": "Commission-based", "location": "Remote", "summary": "Bring on contest sponsors, learning partners and school programs that fit our audience."},
+    {"title": "Volunteer Teacher Reviewer", "type": "Volunteer", "location": "Remote", "summary": "Try new tools with your class and send feedback. Credited on the pages you help improve."}
+  ]
+}

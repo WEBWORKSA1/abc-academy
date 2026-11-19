@@ -1,0 +1,17 @@
+{
+  "prize": "Each age-group winner (2–4, 5–6, 7–8) receives a children's book bundle worth up to US$50 plus a printable winner's certificate. Prize packs grow with sponsor and donor support.",
+  "themes": [
+    {"title": "My Snowy Day", "emoji": "❄️", "brief": "Draw, build or tell a story about a snowy (or rainy!) winter day."},
+    {"title": "Kindness Cards", "emoji": "💌", "brief": "Make a card for someone who has been kind to you, and tell us why."},
+    {"title": "Letter Monsters", "emoji": "🔤", "brief": "Turn a letter of the alphabet into a creature. What sound does it make?"},
+    {"title": "Rainbow Hunt", "emoji": "🌈", "brief": "Find or make something in every color of the rainbow."},
+    {"title": "Garden Bugs", "emoji": "🐞", "brief": "Draw or build a bug you found (or invented). Where does it live?"},
+    {"title": "Under the Sea", "emoji": "🐠", "brief": "Create an ocean scene or a sea creature with a name and a story."},
+    {"title": "Space Explorers", "emoji": "🚀", "brief": "Design a rocket, a planet or an alien friend and tell us about the trip."},
+    {"title": "My Favorite Animal", "emoji": "🦁", "brief": "Show your favorite animal and three facts about it."},
+    {"title": "First Day of School", "emoji": "🎒", "brief": "Draw or write about starting school, a new class or a new friend."},
+    {"title": "Autumn Leaves", "emoji": "🍂", "brief": "Make art with leaves, or count and sort a leaf collection."},
+    {"title": "Thank You, Helpers", "emoji": "🤝", "brief": "Celebrate a community helper — a nurse, teacher, firefighter or neighbor."},
+    {"title": "Winter Wonderland Story", "emoji": "⛄", "brief": "Tell a winter story in pictures or words. Grown-ups can write it down."}
+  ]
+}
