@@ -1,0 +1,4 @@
+---
+layout: null
+---
+[{% assign first = true %}{% for p in site.pages %}{% if p.title and p.noindex != true %}{% unless first %},{% endunless %}{"title":{{ p.title | split: " | " | first | jsonify }},"url":{{ p.url | remove_first: "/" | jsonify }},"description":{{ p.desc | jsonify }}}{% assign first = false %}{% endif %}{% endfor %}{% for g in site.guides %},{"title":{{ g.headline | jsonify }},"url":{{ g.url | remove_first: "/" | jsonify }},"description":{{ g.desc | jsonify }}}{% endfor %}]

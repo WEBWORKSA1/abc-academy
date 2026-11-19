@@ -1,0 +1,15 @@
+title: "ABC.Academy"
+url: "https://abc.academy"
+version: "1.0.0"
+exclude: ["README.md", "scripts", "Gemfile", "Gemfile.lock"]
+
+collections:
+  guides:
+    output: true
+    permalink: /guides/:name.html
+
+defaults:
+  - scope: { path: "" }
+    values: { layout: "default", root: ".", sticky: true, exit: false }
+  - scope: { path: "", type: "guides" }
+    values: { layout: "guide", root: "..", exit: true, article: true, slug: "guides" }

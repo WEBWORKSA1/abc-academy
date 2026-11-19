@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+{% if page.slug == "404" %}<script>document.write('<base href="'+(location.pathname.indexOf('/abc-academy/')===0?'/abc-academy/':'/')+'">');</script>
+{% endif %}<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title | escape }}</title>
+<meta name="description" content="{{ page.desc | escape }}">
+<link rel="canonical" href="{{ site.url }}{{ page.url | replace: 'index.html', '' }}">
+<meta name="robots" content="{% if page.noindex %}noindex,follow{% else %}index,follow,max-image-preview:large{% endif %}">
+<meta name="google-adsense-account" content="ca-pub-6620975821265271">
+<meta property="og:type" content="{% if page.article %}article{% else %}website{% endif %}">
+<meta property="og:site_name" content="ABC.Academy">
+<meta property="og:title" content="{{ page.title | escape }}">
+<meta property="og:description" content="{{ page.desc | escape }}">
+<meta property="og:url" content="{{ site.url }}{{ page.url | replace: 'index.html', '' }}">
+<meta property="og:image" content="{{ site.url }}/assets/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#1B2340">
+<link rel="icon" href="{{ page.root }}/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{{ page.root }}/assets/img/icon-192.png">
+<link rel="manifest" href="{{ page.root }}/manifest.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Andika:wght@400;700&family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ page.root }}/assets/css/style.css?v={{ site.version }}">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6620975821265271" crossorigin="anonymous"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"ABC.Academy","url":"{{ site.url }}/","logo":"{{ site.url }}/assets/img/icon-512.png"}</script>
+{% if page.slug == "index" %}<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"ABC.Academy","url":"{{ site.url }}/","potentialAction":{"@type":"SearchAction","target":"{{ site.url }}/search.html?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+{% elsif page.article %}<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":{{ page.headline | jsonify }},"description":{{ page.desc | jsonify }},"datePublished":"{{ page.published | default: '2026-11-19' }}","dateModified":"{{ site.time | date: '%Y-%m-%d' }}","author":{"@type":"Organization","name":"ABC.Academy Editorial Team"},"publisher":{"@type":"Organization","name":"ABC.Academy","logo":{"@type":"ImageObject","url":"{{ site.url }}/assets/img/icon-512.png"}},"mainEntityOfPage":"{{ site.url }}{{ page.url }}","image":"{{ site.url }}/assets/img/og.png"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"{{ site.url }}/"},{"@type":"ListItem","position":2,"name":"Guides","item":"{{ site.url }}/guides.html"},{"@type":"ListItem","position":3,"name":{{ page.headline | jsonify }},"item":"{{ site.url }}{{ page.url }}"}]}</script>
+{% elsif page.slug != "404" %}<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"{{ site.url }}/"},{"@type":"ListItem","position":2,"name":{{ page.crumb | default: page.title | jsonify }},"item":"{{ site.url }}{{ page.url }}"}]}</script>
+{% endif %}</head>
+<body data-root="{{ page.root }}" data-page="{{ page.slug }}" data-exit="{% if page.exit %}1{% else %}0{% endif %}">
+<a class="skip" href="#main">Skip to content</a>
+<div class="owner-bar"><a href="https://web.works/contact" target="_blank" rel="noopener nofollow"><strong>Contact</strong>, if you are interested in this website / domain name / Sponsorship / Advertisement / Partnership</a></div>
+<header class="site-header"><div class="wrap header-row">
+<a class="logo" href="{{ page.root }}/index.html" aria-label="ABC.Academy home"><span class="logo-blocks" aria-hidden="true"><span>A</span><span>B</span><span>C</span></span><span class="logo-word">ABC<small>.Academy</small></span></a>
+<button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+<nav class="nav" id="site-nav" aria-label="Main"><button class="nav-close" aria-label="Close menu">Close</button><ul>
+<li class="dd"><button class="dd-btn" aria-expanded="false">Learn</button><ul class="dd-menu"><li><a href="{{ page.root }}/alphabet.html">Alphabet<span>Letters, sounds and tracing</span></a></li><li><a href="{{ page.root }}/phonics.html">Phonics lab<span>Build and blend words</span></a></li><li><a href="{{ page.root }}/sight-words.html">Sight words<span>All Dolch lists</span></a></li><li><a href="{{ page.root }}/math.html">Numbers & math<span>Counting to addition</span></a></li><li><a href="{{ page.root }}/stories.html">Story time<span>Read-along stories</span></a></li><li><a href="{{ page.root }}/videos.html">Videos<span>Hand-picked learning videos</span></a></li></ul></li><li><a href="{{ page.root }}/games.html">Games</a></li><li><a href="{{ page.root }}/worksheets.html">Printables</a></li><li class="dd"><button class="dd-btn" aria-expanded="false">Parents</button><ul class="dd-menu"><li><a href="{{ page.root }}/guides.html">Parent & teacher guides<span>How to teach at home</span></a></li><li><a href="{{ page.root }}/readiness.html">Readiness check<span>5-minute skills snapshot</span></a></li><li><a href="{{ page.root }}/get-started.html">Free learning plan<span>Plus tutor matching</span></a></li><li><a href="{{ page.root }}/news.html">Early learning news<span>Updated daily</span></a></li></ul></li><li class="dd"><button class="dd-btn" aria-expanded="false">Community</button><ul class="dd-menu"><li><a href="{{ page.root }}/contests.html">Monthly contest<span>Win prizes</span></a></li><li><a href="{{ page.root }}/support.html">Support us<span>Keep learning free</span></a></li><li><a href="{{ page.root }}/careers.html">Careers<span>Write, draw, teach, build</span></a></li><li><a href="{{ page.root }}/partners.html">Advertise & partner<span>Sponsorships</span></a></li><li><a href="{{ page.root }}/about.html">About</a></li></ul></li>
+</ul><a class="btn btn-primary btn-sm nav-cta" href="{{ page.root }}/get-started.html">Free learning plan</a></nav>
+</div></header>
+<main id="main">
+{{ content }}
+</main>
+<footer class="site-footer"><div class="wrap">
+<div class="foot-grid">
+<div><a class="logo" href="{{ page.root }}/index.html" style="color:#fff"><span class="logo-blocks" aria-hidden="true"><span>A</span><span>B</span><span>C</span></span><span class="logo-word">ABC<small style="color:#C8D0EA">.Academy</small></span></a>
+<p style="margin-top:1rem">Free tools, games, printables and guides that help children ages 2–8 learn to read, write and count.</p>
+<form class="foot-news" data-form="Newsletter signup"><label class="sr-only" for="nl-email">Email address</label><input id="nl-email" type="email" name="email" placeholder="Your email" required><input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off"><input type="hidden" name="list" value="Weekly activities"><button class="btn btn-sun btn-sm" type="submit">Get weekly ideas</button><div class="form-done"><b>You're subscribed.</b> Watch for our weekly activities email.</div></form>
+<p class="small" style="margin-top:.4rem">One email a week. Unsubscribe anytime.</p></div>
+<div><h4>Learn</h4><ul><li><a href="{{ page.root }}/alphabet.html">Alphabet</a></li><li><a href="{{ page.root }}/phonics.html">Phonics lab</a></li><li><a href="{{ page.root }}/sight-words.html">Sight words</a></li><li><a href="{{ page.root }}/math.html">Numbers & math</a></li><li><a href="{{ page.root }}/stories.html">Story time</a></li><li><a href="{{ page.root }}/videos.html">Videos</a></li></ul></div>
+<div><h4>Play & print</h4><ul><li><a href="{{ page.root }}/games.html">Learning games</a></li><li><a href="{{ page.root }}/worksheets.html">Worksheet generator</a></li><li><a href="{{ page.root }}/worksheets.html?type=name">Name tracing</a></li><li><a href="{{ page.root }}/worksheets.html?type=math">Math worksheets</a></li><li><a href="{{ page.root }}/worksheets.html?type=cert">Certificates</a></li></ul></div>
+<div><h4>Parents & teachers</h4><ul><li><a href="{{ page.root }}/guides.html">Guides</a></li><li><a href="{{ page.root }}/readiness.html">Readiness check</a></li><li><a href="{{ page.root }}/get-started.html">Free learning plan</a></li><li><a href="{{ page.root }}/news.html">News</a></li><li><a href="{{ page.root }}/search.html">Search</a></li></ul></div>
+<div><h4>Community</h4><ul><li><a href="{{ page.root }}/contests.html">Monthly contest</a></li><li><a href="{{ page.root }}/support.html">Donate</a></li><li><a href="{{ page.root }}/careers.html">Careers</a></li><li><a href="{{ page.root }}/partners.html">Advertise & partner</a></li><li><a href="{{ page.root }}/about.html">About</a></li><li><a href="{{ page.root }}/contact.html">Contact</a></li></ul></div>
+</div>
+<div class="foot-legal"><span>© <span data-year>{{ site.time | date: '%Y' }}</span> ABC.Academy. An independent educational website, not affiliated with ABCmouse®, Age of Learning, Inc., the American Broadcasting Company or any “ABC Academy” school.</span>
+<span><a href="{{ page.root }}/privacy.html">Privacy</a> · <a href="{{ page.root }}/terms.html">Terms</a> · <a href="{{ page.root }}/disclaimer.html">Disclaimer & trademarks</a> · <a href="{{ page.root }}/sitemap.xml">Sitemap</a></span></div>
+</div></footer>
+<div class="modal" id="plan-modal" role="dialog" aria-modal="true" aria-labelledby="pm-title"><div class="modal-box"><button class="modal-x" aria-label="Close">×</button>
+<h2 id="pm-title" style="font-size:1.6rem">Before you go: a free 30-day learning plan</h2><p class="muted">Tell us your child's age and focus. We'll email a day-by-day plan using free ABC.Academy tools.</p>
+<form data-form="Learning plan (quick)"><div class="row2"><div class="field"><label for="pm-age">Child's age</label><select id="pm-age" name="child_age" required><option value="">Choose</option><option>2-3</option><option>4 (Pre-K)</option><option>5 (Kindergarten)</option><option>6 (Grade 1)</option><option>7-8</option></select></div>
+<div class="field"><label for="pm-focus">Focus</label><select id="pm-focus" name="focus" required><option value="">Choose</option><option>Letters & sounds</option><option>Phonics & reading</option><option>Sight words</option><option>Numbers & math</option><option>Handwriting</option><option>School readiness</option></select></div></div>
+<div class="field"><label for="pm-email">Parent email</label><input id="pm-email" type="email" name="email" required autocomplete="email"></div>
+<input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off"><input type="hidden" name="source" value="exit-intent">
+<label class="check"><input type="checkbox" name="consent" value="yes" required> I'm a parent, guardian or teacher (18+) and agree to receive the plan by email.</label>
+<button class="btn btn-primary" type="submit" style="width:100%">Email me the free plan</button>
+<div class="form-done"><div class="block c-leaf" style="cursor:default">✓</div><h3>Your plan is on its way</h3><p>Want tutor or program matches too? <a href="{{ page.root }}/get-started.html">Add a few details</a>.</p></div></form></div></div>
+{% if page.sticky %}<div class="sticky-cta"><span><b>Free 30-day learning plan</b> for your child</span><a class="btn btn-primary btn-sm" href="{{ page.root }}/get-started.html">Get it free</a></div>
+{% endif %}<script src="{{ page.root }}/assets/js/words.js?v={{ site.version }}" defer></script>
+<script src="{{ page.root }}/assets/js/core.js?v={{ site.version }}" defer></script>
+<script src="{{ page.root }}/assets/js/pages.js?v={{ site.version }}" defer></script>
+{% for s in page.js %}<script src="{{ page.root }}/assets/js/{{ s }}?v={{ site.version }}" defer></script>
+{% endfor %}</body>
+</html>

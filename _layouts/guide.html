@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<section class="page-head"><div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><a href="{{ page.root }}/index.html">Home</a> / <a href="{{ page.root }}/guides.html">Guides</a> / {{ page.cat }}</nav>
+<h1 style="max-width:22ch">{{ page.headline }}</h1><p class="lede">{{ page.desc }}</p>
+<p class="small muted">By the ABC.Academy Editorial Team · {{ page.mins }} min read · Reviewed {{ site.time | date: '%B %Y' }}</p></div></section>
+<section class="section"><div class="wrap article-layout"><article class="prose">
+<nav class="toc" aria-label="In this guide"><b>In this guide</b><ol data-auto-toc></ol></nav>
+{{ content }}
+<div class="inline-cta"><h3>Want a plan made for your child?</h3><p>Answer a few questions and get a free 30-day learning plan by email — plus optional matches with vetted tutors or programs in your budget.</p><a class="btn btn-primary" href="{{ page.root }}/get-started.html?from=guide-{{ page.slug_id }}">Get my free plan</a> <a class="btn btn-ghost" href="{{ page.root }}/readiness.html">Take the 5-minute readiness check</a></div>
+<p class="small muted">This guide is general educational information, not medical, psychological or legal advice. If you have concerns about your child's development, speak with your pediatrician or a qualified specialist.</p>
+</article>
+<aside class="article-aside no-print">
+<div class="panel ruled-top"><h3 style="font-size:1.15rem">Free 30-day learning plan</h3><p class="small muted">A day-by-day plan for your child's age and focus, emailed free.</p><a class="btn btn-primary btn-sm" href="{{ page.root }}/get-started.html?from=guide-aside">Get the plan</a></div>
+<div class="panel"><h3 style="font-size:1.1rem">Related guides</h3><ul style="padding-left:1.1rem;margin:0">{% assign gs = site.guides | sort: "order" %}{% assign n = 0 %}{% for g in gs %}{% if g.cat == page.cat and g.url != page.url and n < 2 %}<li><a href="{{ page.root }}{{ g.url }}">{{ g.headline }}</a></li>{% assign n = n | plus: 1 %}{% endif %}{% endfor %}{% for g in gs %}{% if g.cat != page.cat and n < 4 %}<li><a href="{{ page.root }}{{ g.url }}">{{ g.headline }}</a></li>{% assign n = n | plus: 1 %}{% endif %}{% endfor %}</ul></div>
+<div class="panel"><h3 style="font-size:1.1rem">Practice tools</h3><ul style="padding-left:1.1rem;margin:0"><li><a href="{{ page.root }}/alphabet.html">Alphabet explorer</a></li><li><a href="{{ page.root }}/phonics.html">Phonics lab</a></li><li><a href="{{ page.root }}/worksheets.html">Worksheet generator</a></li><li><a href="{{ page.root }}/games.html">Learning games</a></li></ul></div>
+</aside></div></section>
